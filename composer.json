@@ -1,0 +1,28 @@
+{
+    "name": "alex/auth-package",
+    "description": "Laravel Authentication Package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Alex\\AuthPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "astevens-ai",
+            "email": "stevens_alexander@icloud.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^10.0",
+        "laravel/sanctum": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alex\\AuthPackage\\AuthServiceProvider"
+            ]
+        }
+    }
+}
