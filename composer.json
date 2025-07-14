@@ -1,25 +1,36 @@
 {
+    // Package identification and metadata
     "name": "alex/auth-package",
     "description": "Laravel Authentication Package",
     "type": "library",
+    
+    // PSR-4 autoloading configuration
+    // Maps the Alex\AuthPackage namespace to the src/ directory
     "autoload": {
         "psr-4": {
             "Alex\\AuthPackage\\": "src/"
         }
     },
+    
+    // Package author information
     "authors": [
         {
             "name": "astevens-ai",
             "email": "stevens_alexander@icloud.com"
         }
     ],
+    
+    // Package dependencies and version constraints
     "require": {
-        "php": "^8.0",
-        "laravel/framework": "^10.0",
-        "laravel/sanctum": "^3.0"
+        "php": "^8.0",                    // Minimum PHP version 8.0
+        "laravel/framework": "^10.0",     // Laravel 10.x framework
+        "laravel/sanctum": "^3.0"         // Laravel Sanctum for API authentication
     },
+    
+    // Laravel-specific package configuration
     "extra": {
         "laravel": {
+            // Auto-register service providers when package is installed
             "providers": [
                 "Alex\\AuthPackage\\AuthServiceProvider"
             ]
